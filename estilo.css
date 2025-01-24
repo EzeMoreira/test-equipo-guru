@@ -1,12 +1,5 @@
-/* General */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Monospace', sans-serif;
+body {
+    font-family: 'Monospace';
     background: linear-gradient(to bottom, black, white);
     color: #333;
     display: flex;
@@ -15,7 +8,6 @@
     min-height: 100vh;
   }
   
-  /* Contenedor principal */
   .container {
     display: flex;
     flex-direction: column;
@@ -23,108 +15,81 @@
     justify-content: center;
     flex: 1;
     text-align: center;
-    padding: 20px;
-    width: 100%;
+    padding: 10x;
+    width: 100%p;
   }
   
-  /* Icono */
   .icon-container {
-    margin-bottom: 20px;
+    margin-top: "5px";
+    margin-bottom: "5px";
   }
   
   .icon {
     width: 60px;
     height: 60px;
-    fill: #0088cc; /* Color de Telegram */
+    fill: #0088cc; 
   }
   
-  /* Título */
   h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: black;
   }
   
-  /* Formulario */
+
   form {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 400px; /* Maximo ancho en pantallas grandes */
-  }
+    max-width: 350px;
+}
   
   form input {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
+    margin-top: 15px;
+    margin-bottom: 15px;   
+    background-color: white;
+    border: 2px solid black;
     border-radius: 5px;
     font-size: 1rem;
-    font-family: 'Monospace', sans-serif;
+    font-family: 'Monospace';
   }
   
   form button {
-    width: 100%;
+    width: 75%;
     padding: 10px;
-    background-color: #0088cc;
+    background-color: grey;
     color: white;
-    border: none;
+    border: 2px solid black;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: larger;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-family: 'Monospace', sans-serif;
+    font-family: 'Monospace';
   }
   
   form button:hover {
     background-color: #005f99;
   }
   
-  /* Footer */
+
   footer {
+    font-size: larger;
     text-align: center;
-    background-color: #222;
+    background-color: black;
     color: white;
-    padding: 10px 0;
+    padding: 0px;
   }
   
   footer p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   
-  /* Responsividad */
+  /* Responsive */
   @media (max-width: 768px) {
-    /* Reducción de tamaño del ícono en pantallas más pequeñas */
-    .icon {
-      width: 50px;
-      height: 50px;
-    }
-  
-    /* Ajustes en el formulario */
-    h1 {
-      font-size: 1.5rem;
-    }
-  
-    form {
-      max-width: 90%; /* El formulario se adapta al tamaño de la pantalla */
-    }
-  
-    form input {
-      font-size: 0.9rem; /* Ajuste de tamaño de fuente */
-    }
-  
-    form button {
-      font-size: 0.9rem;
-    }
-  
-    footer p {
-      font-size: 0.8rem;
-    }
-  }
-  
-  /* Para pantallas muy pequeñas como móviles en modo vertical */
-  @media (max-width: 480px) {
     .icon {
       width: 40px;
       height: 40px;
@@ -135,13 +100,40 @@
     }
   
     form {
-      max-width: 95%;
+      max-width: 85%;
+    }
+  
+    form input {
+      font-size: 1rem;
+    }
+  
+    form button {
+      font-size: 1rem;
+    }
+  
+    footer p {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .icon {
+      width: 35px;
+      height: 35px;
+    }
+  
+    h1 {
+      font-size: 1.2rem;
+    }
+  
+    form {
+      max-width: 90%;
     }
   
     form input,
     form button {
-      padding: 8px;
-      font-size: 0.8rem;
+      padding: 6px;
+      font-size: 1rem;
     }
   
     footer p {
