@@ -1,0 +1,151 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Monospace', sans-serif;
+    background: linear-gradient(to bottom, black, white);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  /* Icono */
+  .icon-container {
+    margin-bottom: 20px;
+  }
+  
+  .icon {
+    width: 60px;
+    height: 60px;
+    fill: #0088cc; /* Color de Telegram */
+  }
+  
+  /* Título */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Formulario */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; /* Maximo ancho en pantallas grandes */
+  }
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Monospace', sans-serif;
+  }
+  
+  form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0088cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Monospace', sans-serif;
+  }
+  
+  form button:hover {
+    background-color: #005f99;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    /* Reducción de tamaño del ícono en pantallas más pequeñas */
+    .icon {
+      width: 50px;
+      height: 50px;
+    }
+  
+    /* Ajustes en el formulario */
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    form {
+      max-width: 90%; /* El formulario se adapta al tamaño de la pantalla */
+    }
+  
+    form input {
+      font-size: 0.9rem; /* Ajuste de tamaño de fuente */
+    }
+  
+    form button {
+      font-size: 0.9rem;
+    }
+  
+    footer p {
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* Para pantallas muy pequeñas como móviles en modo vertical */
+  @media (max-width: 480px) {
+    .icon {
+      width: 40px;
+      height: 40px;
+    }
+  
+    h1 {
+      font-size: 1.3rem;
+    }
+  
+    form {
+      max-width: 95%;
+    }
+  
+    form input,
+    form button {
+      padding: 8px;
+      font-size: 0.8rem;
+    }
+  
+    footer p {
+      font-size: 0.7rem;
+    }
+  }
+  
