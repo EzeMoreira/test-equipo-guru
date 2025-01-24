@@ -1,0 +1,20 @@
+Hola, buenos días Adela, te saluda Ezequiel, primero que nada de antemano agradecerte la consideración que me tuviste
+para poder participar en esta prueba técnica, en este archivo voy a ir colocando a manera de documentación o un paso 
+a paso explicando el proyecto que me comentaste.
+Agregando algunas cosas para que no sea similar al ejemplo para poder darle un poco de ese valor agregado que 
+diferencia a todos los codigos y todos los programadores, espero te guste, saludos!
+
+Con respecto al ejercicio para la prueba tecnica, sencillo con creatividad al mismo tiempo.
+
+Ocuamos react-icons para poder importarlo directamente, aunque en caso de trabajar de manera distinta
+solamente subiriamos el archivo de la foto, son dos opciones para trabajar.
+
+Entorno backend con Node.js.
+
+Estilos en linea en el mismo archivo app.jsx para mayor simplicidad aunque tambien en caso de trabajar en equipo
+se puede exportar los estilos a otra carpeta para un poco mas de orden y quizas menos codigo en una sola area.
+
+Diseño responsivo para poder verse desde telefono.
+
+Y por último transicion en el boton para jugar un poco con la aplicacion, aunque tranquilamente podría mejorarse
+o tener otras animaciones.
